@@ -1,0 +1,350 @@
+2025-11-28 01:38:21,839 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.15:5001
+2025-11-28 01:38:21,839 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-28 01:38:29,926 - INFO - 127.0.0.1 - - [28/Nov/2025 01:38:29] "OPTIONS /api/process-video HTTP/1.1" 200 -
+2025-11-28 01:41:27,354 - INFO - ================================================================================
+2025-11-28 01:41:27,354 - INFO - 📤 STARTING DATABASE UPDATE
+2025-11-28 01:41:27,355 - INFO - ================================================================================
+2025-11-28 01:41:27,368 - INFO - 📊 Read 4 students from CSV (skipped unknown tracks)
+2025-11-28 01:41:27,369 - INFO - ✅ Enriched 3 students with JSON ALS data
+2025-11-28 01:41:27,382 - INFO - 📥 Retrieved 5 students from database
+2025-11-28 01:41:27,383 - INFO - ✅ Updating 104221559 → StudentID=1, ALS=100.00, ActivePoint=100
+2025-11-28 01:41:27,425 - INFO - 📄 Generating evidence PDF for 104221559...
+2025-11-28 01:41:27,433 - INFO - ✅ Generated PDF: /reports/104221559.pdf
+2025-11-28 01:41:27,471 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 01:41:27,472 - INFO - ✅ Evidence PDF generated: /reports/104221559.pdf
+2025-11-28 01:41:27,472 - INFO - ✅ Updating 104182562 → StudentID=4, ALS=58.10, ActivePoint=58
+2025-11-28 01:41:27,476 - INFO - 📄 Generating evidence PDF for 104182562...
+2025-11-28 01:41:27,481 - INFO - ✅ Generated PDF: /reports/104182562.pdf
+2025-11-28 01:41:27,500 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 01:41:27,500 - INFO - ✅ Evidence PDF generated: /reports/104182562.pdf
+2025-11-28 01:41:27,501 - INFO - ✅ Updating 104221795 → StudentID=5, ALS=83.33, ActivePoint=83
+2025-11-28 01:41:27,532 - INFO - 📄 Generating evidence PDF for 104221795...
+2025-11-28 01:41:27,537 - INFO - ✅ Generated PDF: /reports/104221795.pdf
+2025-11-28 01:41:27,578 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 01:41:27,578 - INFO - ✅ Evidence PDF generated: /reports/104221795.pdf
+2025-11-28 01:41:27,578 - INFO - ✅ Updating 104181857 → StudentID=3, ALS=83.33, ActivePoint=83
+2025-11-28 01:41:27,610 - INFO - 📄 Generating evidence PDF for 104181857...
+2025-11-28 01:41:27,615 - INFO - ✅ Generated PDF: /reports/104181857.pdf
+2025-11-28 01:41:27,656 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 01:41:27,657 - INFO - ✅ Evidence PDF generated: /reports/104181857.pdf
+2025-11-28 01:41:27,657 - INFO - ================================================================================
+2025-11-28 01:41:27,657 - INFO - ✅ DATABASE UPDATE COMPLETED
+2025-11-28 01:41:27,657 - INFO - 📊 Summary: 4/4 students updated
+2025-11-28 01:41:27,658 - INFO - 📄 Evidence: 4/4 PDFs generated
+2025-11-28 01:41:27,658 - INFO - ================================================================================
+2025-11-28 01:41:27,665 - INFO - 127.0.0.1 - - [28/Nov/2025 01:41:27] "POST /api/process-video HTTP/1.1" 200 -
+2025-11-28 01:41:47,008 - INFO - 127.0.0.1 - - [28/Nov/2025 01:41:47] "GET /api/get-processed-video?sessionId=2 HTTP/1.1" 200 -
+2025-11-28 01:41:47,366 - INFO - 127.0.0.1 - - [28/Nov/2025 01:41:47] "[35m[1mGET /outputs/session_2_20251128_013830_20251128_013833/session_2_20251128_013830.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:41:47,605 - INFO - 127.0.0.1 - - [28/Nov/2025 01:41:47] "[35m[1mGET /outputs/session_2_20251128_013830_20251128_013833/session_2_20251128_013830.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:41:47,684 - INFO - 127.0.0.1 - - [28/Nov/2025 01:41:47] "[35m[1mGET /outputs/session_2_20251128_013830_20251128_013833/session_2_20251128_013830.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:41:47,916 - INFO - 127.0.0.1 - - [28/Nov/2025 01:41:47] "[35m[1mGET /outputs/session_2_20251128_013830_20251128_013833/session_2_20251128_013830.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:41:47,995 - INFO - 127.0.0.1 - - [28/Nov/2025 01:41:47] "[35m[1mGET /outputs/session_2_20251128_013830_20251128_013833/session_2_20251128_013830.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:41:49,161 - INFO - 127.0.0.1 - - [28/Nov/2025 01:41:49] "GET /api/get-violation-videos?sessionId=2&studentId=104182562 HTTP/1.1" 200 -
+2025-11-28 01:41:53,694 - INFO - 127.0.0.1 - - [28/Nov/2025 01:41:53] "GET /api/get-violation-videos?sessionId=2&studentId=104181857 HTTP/1.1" 200 -
+2025-11-28 01:41:55,038 - INFO - 127.0.0.1 - - [28/Nov/2025 01:41:55] "GET /api/get-violation-videos?sessionId=2&studentId=104221559 HTTP/1.1" 200 -
+2025-11-28 01:41:56,273 - INFO - 127.0.0.1 - - [28/Nov/2025 01:41:56] "GET /api/get-violation-videos?sessionId=2&studentId=104221795 HTTP/1.1" 200 -
+2025-11-28 01:42:35,446 - INFO - 127.0.0.1 - - [28/Nov/2025 01:42:35] "OPTIONS /api/process-video HTTP/1.1" 200 -
+2025-11-28 01:49:37,598 - INFO - ================================================================================
+2025-11-28 01:49:37,599 - INFO - 📤 STARTING DATABASE UPDATE
+2025-11-28 01:49:37,599 - INFO - ================================================================================
+2025-11-28 01:49:37,610 - INFO - 📊 Read 4 students from CSV (skipped unknown tracks)
+2025-11-28 01:49:37,611 - INFO - ✅ Enriched 4 students with JSON ALS data
+2025-11-28 01:49:37,626 - INFO - 📥 Retrieved 5 students from database
+2025-11-28 01:49:37,627 - INFO - ✅ Updating 104221795 → StudentID=5, ALS=66.67, ActivePoint=67
+2025-11-28 01:49:37,646 - INFO - 📄 Generating evidence PDF for 104221795...
+2025-11-28 01:49:37,653 - INFO - ✅ Generated PDF: /reports/104221795.pdf
+2025-11-28 01:49:37,675 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 01:49:37,675 - INFO - ✅ Evidence PDF generated: /reports/104221795.pdf
+2025-11-28 01:49:37,675 - INFO - ✅ Updating 104181857 → StudentID=3, ALS=76.81, ActivePoint=77
+2025-11-28 01:49:37,707 - INFO - 📄 Generating evidence PDF for 104181857...
+2025-11-28 01:49:37,711 - INFO - ✅ Generated PDF: /reports/104181857.pdf
+2025-11-28 01:49:37,752 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 01:49:37,752 - INFO - ✅ Evidence PDF generated: /reports/104181857.pdf
+2025-11-28 01:49:37,752 - INFO - ✅ Updating 104182562 → StudentID=4, ALS=59.57, ActivePoint=60
+2025-11-28 01:49:37,787 - INFO - 📄 Generating evidence PDF for 104182562...
+2025-11-28 01:49:37,792 - INFO - ✅ Generated PDF: /reports/104182562.pdf
+2025-11-28 01:49:37,830 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 01:49:37,830 - INFO - ✅ Evidence PDF generated: /reports/104182562.pdf
+2025-11-28 01:49:37,830 - INFO - ✅ Updating 104221559 → StudentID=1, ALS=69.20, ActivePoint=69
+2025-11-28 01:49:37,866 - INFO - 📄 Generating evidence PDF for 104221559...
+2025-11-28 01:49:37,869 - INFO - ✅ Generated PDF: /reports/104221559.pdf
+2025-11-28 01:49:37,872 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 01:49:37,874 - INFO - ✅ Evidence PDF generated: /reports/104221559.pdf
+2025-11-28 01:49:37,874 - INFO - ================================================================================
+2025-11-28 01:49:37,874 - INFO - ✅ DATABASE UPDATE COMPLETED
+2025-11-28 01:49:37,874 - INFO - 📊 Summary: 4/4 students updated
+2025-11-28 01:49:37,874 - INFO - 📄 Evidence: 4/4 PDFs generated
+2025-11-28 01:49:37,874 - INFO - ================================================================================
+2025-11-28 01:49:37,885 - INFO - 127.0.0.1 - - [28/Nov/2025 01:49:37] "POST /api/process-video HTTP/1.1" 200 -
+2025-11-28 01:49:55,659 - INFO - 127.0.0.1 - - [28/Nov/2025 01:49:55] "GET /api/get-processed-video?sessionId=2 HTTP/1.1" 200 -
+2025-11-28 01:49:56,000 - INFO - 127.0.0.1 - - [28/Nov/2025 01:49:56] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/session_2_20251128_014236.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:49:56,256 - INFO - 127.0.0.1 - - [28/Nov/2025 01:49:56] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/session_2_20251128_014236.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:49:56,320 - INFO - 127.0.0.1 - - [28/Nov/2025 01:49:56] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/session_2_20251128_014236.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:49:56,569 - INFO - 127.0.0.1 - - [28/Nov/2025 01:49:56] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/session_2_20251128_014236.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:49:56,676 - INFO - 127.0.0.1 - - [28/Nov/2025 01:49:56] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/session_2_20251128_014236.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:49:57,365 - INFO - 127.0.0.1 - - [28/Nov/2025 01:49:57] "GET /api/get-violation-videos?sessionId=2&studentId=104182562 HTTP/1.1" 200 -
+2025-11-28 01:49:57,419 - INFO - 127.0.0.1 - - [28/Nov/2025 01:49:57] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:49:57,737 - INFO - 127.0.0.1 - - [28/Nov/2025 01:49:57] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:49:58,050 - INFO - 127.0.0.1 - - [28/Nov/2025 01:49:58] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:49:58,050 - INFO - 127.0.0.1 - - [28/Nov/2025 01:49:58] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:49:58,315 - INFO - 127.0.0.1 - - [28/Nov/2025 01:49:58] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:52:02,928 - INFO - 127.0.0.1 - - [28/Nov/2025 01:52:02] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:52:03,191 - INFO - 127.0.0.1 - - [28/Nov/2025 01:52:03] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:52:03,238 - INFO - 127.0.0.1 - - [28/Nov/2025 01:52:03] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:52:03,241 - INFO - 127.0.0.1 - - [28/Nov/2025 01:52:03] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:52:03,554 - INFO - 127.0.0.1 - - [28/Nov/2025 01:52:03] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:52:03,865 - INFO - 127.0.0.1 - - [28/Nov/2025 01:52:03] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:52:04,132 - INFO - 127.0.0.1 - - [28/Nov/2025 01:52:04] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:52:09,075 - INFO - 127.0.0.1 - - [28/Nov/2025 01:52:09] "GET /api/get-violation-videos?sessionId=2&studentId=104181857 HTTP/1.1" 200 -
+2025-11-28 01:52:10,498 - INFO - 127.0.0.1 - - [28/Nov/2025 01:52:10] "GET /api/get-violation-videos?sessionId=2&studentId=104221559 HTTP/1.1" 200 -
+2025-11-28 01:52:12,486 - INFO - 127.0.0.1 - - [28/Nov/2025 01:52:12] "GET /api/get-violation-videos?sessionId=2&studentId=104221795 HTTP/1.1" 200 -
+2025-11-28 01:52:18,007 - INFO - 127.0.0.1 - - [28/Nov/2025 01:52:18] "GET /api/get-violation-videos?sessionId=2&studentId=104222222 HTTP/1.1" 200 -
+2025-11-28 01:59:20,462 - INFO - 127.0.0.1 - - [28/Nov/2025 01:59:20] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:59:20,725 - INFO - 127.0.0.1 - - [28/Nov/2025 01:59:20] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:59:20,772 - INFO - 127.0.0.1 - - [28/Nov/2025 01:59:20] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:59:20,776 - INFO - 127.0.0.1 - - [28/Nov/2025 01:59:20] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:59:21,087 - INFO - 127.0.0.1 - - [28/Nov/2025 01:59:21] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 01:59:21,087 - INFO - 127.0.0.1 - - [28/Nov/2025 01:59:21] "[35m[1mGET /outputs/session_2_20251128_014236_20251128_014239/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:34:59,418 - INFO - 127.0.0.1 - - [28/Nov/2025 02:34:59] "[33mGET /api/get-processed-video?sessionId=2 HTTP/1.1[0m" 404 -
+2025-11-28 02:35:00,942 - INFO - 127.0.0.1 - - [28/Nov/2025 02:35:00] "[33mGET /api/get-violation-videos?sessionId=2&studentId=104182562 HTTP/1.1[0m" 404 -
+2025-11-28 02:35:03,642 - INFO - 127.0.0.1 - - [28/Nov/2025 02:35:03] "[33mGET /api/get-violation-videos?sessionId=2&studentId=104181857 HTTP/1.1[0m" 404 -
+2025-11-28 02:36:09,092 - INFO - 127.0.0.1 - - [28/Nov/2025 02:36:09] "OPTIONS /api/process-video HTTP/1.1" 200 -
+2025-11-28 02:38:57,850 - INFO - 127.0.0.1 - - [28/Nov/2025 02:38:57] "[31m[1mGET /api/get-violation-videos?sessionId=${encodeURIComponent( HTTP/1.1[0m" 400 -
+2025-11-28 02:38:57,880 - INFO - 127.0.0.1 - - [28/Nov/2025 02:38:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-28 02:40:39,455 - INFO - 127.0.0.1 - - [28/Nov/2025 02:40:39] "[33mGET /api/get-processed-video?sessionId=1 HTTP/1.1[0m" 404 -
+2025-11-28 02:40:40,889 - INFO - 127.0.0.1 - - [28/Nov/2025 02:40:40] "GET /api/get-processed-video?sessionId=2 HTTP/1.1" 200 -
+2025-11-28 02:40:41,230 - INFO - 127.0.0.1 - - [28/Nov/2025 02:40:41] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:40:47,304 - INFO - 127.0.0.1 - - [28/Nov/2025 02:40:47] "GET /api/get-violation-videos?sessionId=2&studentId=104182562 HTTP/1.1" 200 -
+2025-11-28 02:40:51,080 - INFO - 127.0.0.1 - - [28/Nov/2025 02:40:51] "GET /api/get-violation-videos?sessionId=2&studentId=104221795 HTTP/1.1" 200 -
+2025-11-28 02:40:52,748 - INFO - 127.0.0.1 - - [28/Nov/2025 02:40:52] "GET /api/get-violation-videos?sessionId=2&studentId=104221559 HTTP/1.1" 200 -
+2025-11-28 02:42:51,070 - INFO - ================================================================================
+2025-11-28 02:42:51,070 - INFO - 📤 STARTING DATABASE UPDATE
+2025-11-28 02:42:51,070 - INFO - ================================================================================
+2025-11-28 02:42:51,081 - INFO - 📊 Read 4 students from CSV (skipped unknown tracks)
+2025-11-28 02:42:51,081 - INFO - ✅ Enriched 4 students with JSON ALS data
+2025-11-28 02:42:51,128 - INFO - 📥 Retrieved 5 students from database
+2025-11-28 02:42:51,129 - INFO - ✅ Updating 104221795 → StudentID=5, ALS=66.67, ActivePoint=67
+2025-11-28 02:42:51,160 - INFO - 📄 Generating evidence PDF for 104221795...
+2025-11-28 02:42:51,168 - INFO - ✅ Generated PDF: /reports/104221795.pdf
+2025-11-28 02:42:51,188 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 02:42:51,188 - INFO - ✅ Evidence PDF generated: /reports/104221795.pdf
+2025-11-28 02:42:51,188 - INFO - ✅ Updating 104181857 → StudentID=3, ALS=76.81, ActivePoint=77
+2025-11-28 02:42:51,204 - INFO - 📄 Generating evidence PDF for 104181857...
+2025-11-28 02:42:51,209 - INFO - ✅ Generated PDF: /reports/104181857.pdf
+2025-11-28 02:42:51,234 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 02:42:51,234 - INFO - ✅ Evidence PDF generated: /reports/104181857.pdf
+2025-11-28 02:42:51,235 - INFO - ✅ Updating 104221559 → StudentID=1, ALS=69.20, ActivePoint=69
+2025-11-28 02:42:51,251 - INFO - 📄 Generating evidence PDF for 104221559...
+2025-11-28 02:42:51,254 - INFO - ✅ Generated PDF: /reports/104221559.pdf
+2025-11-28 02:42:51,280 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 02:42:51,281 - INFO - ✅ Evidence PDF generated: /reports/104221559.pdf
+2025-11-28 02:42:51,281 - INFO - ✅ Updating 104182562 → StudentID=4, ALS=59.57, ActivePoint=60
+2025-11-28 02:42:51,286 - INFO - 📄 Generating evidence PDF for 104182562...
+2025-11-28 02:42:51,290 - INFO - ✅ Generated PDF: /reports/104182562.pdf
+2025-11-28 02:42:51,311 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 02:42:51,313 - INFO - ✅ Evidence PDF generated: /reports/104182562.pdf
+2025-11-28 02:42:51,313 - INFO - ================================================================================
+2025-11-28 02:42:51,313 - INFO - ✅ DATABASE UPDATE COMPLETED
+2025-11-28 02:42:51,313 - INFO - 📊 Summary: 4/4 students updated
+2025-11-28 02:42:51,313 - INFO - 📄 Evidence: 4/4 PDFs generated
+2025-11-28 02:42:51,314 - INFO - ================================================================================
+2025-11-28 02:42:51,323 - INFO - 127.0.0.1 - - [28/Nov/2025 02:42:51] "POST /api/process-video HTTP/1.1" 200 -
+2025-11-28 02:43:19,132 - INFO - 127.0.0.1 - - [28/Nov/2025 02:43:19] "GET /api/get-processed-video?sessionId=2 HTTP/1.1" 200 -
+2025-11-28 02:43:19,477 - INFO - 127.0.0.1 - - [28/Nov/2025 02:43:19] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:43:19,723 - INFO - 127.0.0.1 - - [28/Nov/2025 02:43:19] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:43:19,786 - INFO - 127.0.0.1 - - [28/Nov/2025 02:43:19] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:43:20,034 - INFO - 127.0.0.1 - - [28/Nov/2025 02:43:20] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:43:20,111 - INFO - 127.0.0.1 - - [28/Nov/2025 02:43:20] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:43:20,346 - INFO - 127.0.0.1 - - [28/Nov/2025 02:43:20] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:43:21,437 - INFO - 127.0.0.1 - - [28/Nov/2025 02:43:21] "GET /api/get-violation-videos?sessionId=2&studentId=104182562 HTTP/1.1" 200 -
+2025-11-28 02:43:21,488 - INFO - 127.0.0.1 - - [28/Nov/2025 02:43:21] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:43:21,794 - INFO - 127.0.0.1 - - [28/Nov/2025 02:43:21] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:43:22,106 - INFO - 127.0.0.1 - - [28/Nov/2025 02:43:22] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:46:32,743 - INFO - 127.0.0.1 - - [28/Nov/2025 02:46:32] "GET /api/get-processed-video?sessionId=2 HTTP/1.1" 200 -
+2025-11-28 02:46:33,068 - INFO - 127.0.0.1 - - [28/Nov/2025 02:46:33] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:46:33,331 - INFO - 127.0.0.1 - - [28/Nov/2025 02:46:33] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:46:33,378 - INFO - 127.0.0.1 - - [28/Nov/2025 02:46:33] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:46:33,663 - INFO - 127.0.0.1 - - [28/Nov/2025 02:46:33] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:46:33,695 - INFO - 127.0.0.1 - - [28/Nov/2025 02:46:33] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:46:33,991 - INFO - 127.0.0.1 - - [28/Nov/2025 02:46:33] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:46:34,051 - INFO - 127.0.0.1 - - [28/Nov/2025 02:46:34] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:46:34,615 - INFO - 127.0.0.1 - - [28/Nov/2025 02:46:34] "GET /api/get-violation-videos?sessionId=2&studentId=104182562 HTTP/1.1" 200 -
+2025-11-28 02:46:34,648 - INFO - 127.0.0.1 - - [28/Nov/2025 02:46:34] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:46:34,957 - INFO - 127.0.0.1 - - [28/Nov/2025 02:46:34] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:46:34,958 - INFO - 127.0.0.1 - - [28/Nov/2025 02:46:34] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:46:35,269 - INFO - 127.0.0.1 - - [28/Nov/2025 02:46:35] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:46:35,523 - INFO - 127.0.0.1 - - [28/Nov/2025 02:46:35] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:46:35,584 - INFO - 127.0.0.1 - - [28/Nov/2025 02:46:35] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:46:55,524 - INFO - 127.0.0.1 - - [28/Nov/2025 02:46:55] "GET /api/get-violation-videos?sessionId=2&studentId=104181857 HTTP/1.1" 200 -
+2025-11-28 02:47:01,823 - INFO - 127.0.0.1 - - [28/Nov/2025 02:47:01] "GET /api/get-violation-videos?sessionId=2&studentId=104221559 HTTP/1.1" 200 -
+2025-11-28 02:47:03,105 - INFO - 127.0.0.1 - - [28/Nov/2025 02:47:03] "GET /api/get-violation-videos?sessionId=2&studentId=104221795 HTTP/1.1" 200 -
+2025-11-28 02:47:41,097 - INFO - 127.0.0.1 - - [28/Nov/2025 02:47:41] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:47:41,366 - INFO - 127.0.0.1 - - [28/Nov/2025 02:47:41] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:47:41,412 - INFO - 127.0.0.1 - - [28/Nov/2025 02:47:41] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:47:41,415 - INFO - 127.0.0.1 - - [28/Nov/2025 02:47:41] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:47:41,720 - INFO - 127.0.0.1 - - [28/Nov/2025 02:47:41] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:47:42,031 - INFO - 127.0.0.1 - - [28/Nov/2025 02:47:42] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:47:42,342 - INFO - 127.0.0.1 - - [28/Nov/2025 02:47:42] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 02:47:42,610 - INFO - 127.0.0.1 - - [28/Nov/2025 02:47:42] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:37:43,316 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:43] "[33mGET /api/get-processed-video?sessionId=1 HTTP/1.1[0m" 404 -
+2025-11-28 08:37:44,850 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:44] "GET /api/get-processed-video?sessionId=2 HTTP/1.1" 200 -
+2025-11-28 08:37:45,187 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:45] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:37:45,434 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:45] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:37:45,503 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:45] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:37:45,758 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:45] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:37:45,807 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:45] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:37:46,107 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:46] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:37:46,136 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:46] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:37:46,415 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:46] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:37:46,449 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:46] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:37:46,746 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:46] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:37:49,857 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:49] "GET /api/get-violation-videos?sessionId=2&studentId=104182562 HTTP/1.1" 200 -
+2025-11-28 08:37:49,879 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:49] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:37:50,188 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:50] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:37:50,260 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:50] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:37:50,580 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:50] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:37:50,832 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:50] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:37:50,890 - INFO - 127.0.0.1 - - [28/Nov/2025 08:37:50] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:39:46,749 - INFO - 127.0.0.1 - - [28/Nov/2025 08:39:46] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:39:47,006 - INFO - 127.0.0.1 - - [28/Nov/2025 08:39:47] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:39:47,067 - INFO - 127.0.0.1 - - [28/Nov/2025 08:39:47] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:39:47,067 - INFO - 127.0.0.1 - - [28/Nov/2025 08:39:47] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:39:47,372 - INFO - 127.0.0.1 - - [28/Nov/2025 08:39:47] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:39:47,695 - INFO - 127.0.0.1 - - [28/Nov/2025 08:39:47] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:39:47,939 - INFO - 127.0.0.1 - - [28/Nov/2025 08:39:47] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:40:21,860 - INFO - 127.0.0.1 - - [28/Nov/2025 08:40:21] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:46:07,597 - INFO - 127.0.0.1 - - [28/Nov/2025 08:46:07] "GET /api/get-processed-video?sessionId=2 HTTP/1.1" 200 -
+2025-11-28 08:46:07,927 - INFO - 127.0.0.1 - - [28/Nov/2025 08:46:07] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:46:08,174 - INFO - 127.0.0.1 - - [28/Nov/2025 08:46:08] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:46:08,237 - INFO - 127.0.0.1 - - [28/Nov/2025 08:46:08] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:46:08,486 - INFO - 127.0.0.1 - - [28/Nov/2025 08:46:08] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:46:08,558 - INFO - 127.0.0.1 - - [28/Nov/2025 08:46:08] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/session_2_20251128_023609.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:46:10,657 - INFO - 127.0.0.1 - - [28/Nov/2025 08:46:10] "GET /api/get-violation-videos?sessionId=2&studentId=104182562 HTTP/1.1" 200 -
+2025-11-28 08:46:10,989 - INFO - 127.0.0.1 - - [28/Nov/2025 08:46:10] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:46:11,249 - INFO - 127.0.0.1 - - [28/Nov/2025 08:46:11] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:46:11,305 - INFO - 127.0.0.1 - - [28/Nov/2025 08:46:11] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:46:11,563 - INFO - 127.0.0.1 - - [28/Nov/2025 08:46:11] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 08:47:06,933 - INFO - 127.0.0.1 - - [28/Nov/2025 08:47:06] "GET /api/get-violation-videos?sessionId=2&studentId=104181857 HTTP/1.1" 200 -
+2025-11-28 08:47:09,226 - INFO - 127.0.0.1 - - [28/Nov/2025 08:47:09] "GET /api/get-violation-videos?sessionId=2&studentId=104221795 HTTP/1.1" 200 -
+2025-11-28 08:47:12,324 - INFO - 127.0.0.1 - - [28/Nov/2025 08:47:12] "GET /api/get-violation-videos?sessionId=2&studentId=104221559 HTTP/1.1" 200 -
+2025-11-28 09:05:57,319 - INFO - 127.0.0.1 - - [28/Nov/2025 09:05:57] "GET /api/get-violation-videos?sessionId=2&studentId=104182562 HTTP/1.1" 200 -
+2025-11-28 09:05:57,654 - INFO - 127.0.0.1 - - [28/Nov/2025 09:05:57] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:05:57,894 - INFO - 127.0.0.1 - - [28/Nov/2025 09:05:57] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:05:57,962 - INFO - 127.0.0.1 - - [28/Nov/2025 09:05:57] "[35m[1mGET /outputs/session_2_20251128_023609_20251128_023612/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:06:12,213 - INFO - 127.0.0.1 - - [28/Nov/2025 09:06:12] "GET /api/get-violation-videos?sessionId=2&studentId=104182562 HTTP/1.1" 200 -
+2025-11-28 09:18:00,185 - INFO - 127.0.0.1 - - [28/Nov/2025 09:18:00] "OPTIONS /api/process-video HTTP/1.1" 200 -
+2025-11-28 09:28:16,965 - INFO - ================================================================================
+2025-11-28 09:28:16,965 - INFO - 📤 STARTING DATABASE UPDATE
+2025-11-28 09:28:16,965 - INFO - ================================================================================
+2025-11-28 09:28:16,973 - INFO - 📊 Read 4 students from CSV (skipped unknown tracks)
+2025-11-28 09:28:16,973 - INFO - ✅ Enriched 4 students with JSON ALS data
+2025-11-28 09:28:16,985 - INFO - 📥 Retrieved 5 students from database
+2025-11-28 09:28:16,985 - INFO - ✅ Updating 104221795 → StudentID=5, ALS=66.67, ActivePoint=67
+2025-11-28 09:28:17,001 - INFO - 📄 Generating evidence PDF for 104221795...
+2025-11-28 09:28:17,005 - INFO - ✅ Generated PDF: /reports/104221795.pdf
+2025-11-28 09:28:17,030 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 09:28:17,030 - INFO - ✅ Evidence PDF generated: /reports/104221795.pdf
+2025-11-28 09:28:17,030 - INFO - ✅ Updating 104181857 → StudentID=3, ALS=76.81, ActivePoint=77
+2025-11-28 09:28:17,047 - INFO - 📄 Generating evidence PDF for 104181857...
+2025-11-28 09:28:17,047 - INFO - ✅ Generated PDF: /reports/104181857.pdf
+2025-11-28 09:28:17,096 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 09:28:17,096 - INFO - ✅ Evidence PDF generated: /reports/104181857.pdf
+2025-11-28 09:28:17,096 - INFO - ✅ Updating 104182562 → StudentID=4, ALS=59.57, ActivePoint=60
+2025-11-28 09:28:17,118 - INFO - 📄 Generating evidence PDF for 104182562...
+2025-11-28 09:28:17,121 - INFO - ✅ Generated PDF: /reports/104182562.pdf
+2025-11-28 09:28:17,147 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 09:28:17,151 - INFO - ✅ Evidence PDF generated: /reports/104182562.pdf
+2025-11-28 09:28:17,151 - INFO - ✅ Updating 104221559 → StudentID=1, ALS=69.20, ActivePoint=69
+2025-11-28 09:28:17,155 - INFO - 📄 Generating evidence PDF for 104221559...
+2025-11-28 09:28:17,155 - INFO - ✅ Generated PDF: /reports/104221559.pdf
+2025-11-28 09:28:17,196 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 09:28:17,196 - INFO - ✅ Evidence PDF generated: /reports/104221559.pdf
+2025-11-28 09:28:17,196 - INFO - ================================================================================
+2025-11-28 09:28:17,196 - INFO - ✅ DATABASE UPDATE COMPLETED
+2025-11-28 09:28:17,196 - INFO - 📊 Summary: 4/4 students updated
+2025-11-28 09:28:17,196 - INFO - 📄 Evidence: 4/4 PDFs generated
+2025-11-28 09:28:17,196 - INFO - ================================================================================
+2025-11-28 09:28:17,213 - INFO - 127.0.0.1 - - [28/Nov/2025 09:28:17] "POST /api/process-video HTTP/1.1" 200 -
+2025-11-28 09:50:41,158 - INFO - 127.0.0.1 - - [28/Nov/2025 09:50:41] "[33mGET /api/get-processed-video?sessionId=1 HTTP/1.1[0m" 404 -
+2025-11-28 09:51:40,836 - INFO - 127.0.0.1 - - [28/Nov/2025 09:51:40] "[33mGET /api/get-processed-video?sessionId=1 HTTP/1.1[0m" 404 -
+2025-11-28 09:51:43,354 - INFO - 127.0.0.1 - - [28/Nov/2025 09:51:43] "GET /api/get-processed-video?sessionId=2 HTTP/1.1" 200 -
+2025-11-28 09:51:43,714 - INFO - 127.0.0.1 - - [28/Nov/2025 09:51:43] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/session_2_20251128_091800.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:51:43,963 - INFO - 127.0.0.1 - - [28/Nov/2025 09:51:43] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/session_2_20251128_091800.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:51:44,029 - INFO - 127.0.0.1 - - [28/Nov/2025 09:51:44] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/session_2_20251128_091800.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:51:44,270 - INFO - 127.0.0.1 - - [28/Nov/2025 09:51:44] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/session_2_20251128_091800.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:51:44,337 - INFO - 127.0.0.1 - - [28/Nov/2025 09:51:44] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/session_2_20251128_091800.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:51:44,616 - INFO - 127.0.0.1 - - [28/Nov/2025 09:51:44] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/session_2_20251128_091800.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:51:44,682 - INFO - 127.0.0.1 - - [28/Nov/2025 09:51:44] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/session_2_20251128_091800.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:51:45,538 - INFO - 127.0.0.1 - - [28/Nov/2025 09:51:45] "GET /api/get-violation-videos?sessionId=2&studentId=104182562 HTTP/1.1" 200 -
+2025-11-28 09:51:45,578 - INFO - 127.0.0.1 - - [28/Nov/2025 09:51:45] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:51:45,899 - INFO - 127.0.0.1 - - [28/Nov/2025 09:51:45] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:51:46,151 - INFO - 127.0.0.1 - - [28/Nov/2025 09:51:46] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:52:39,822 - INFO - 127.0.0.1 - - [28/Nov/2025 09:52:39] "GET /api/get-processed-video?sessionId=2 HTTP/1.1" 200 -
+2025-11-28 09:52:39,847 - INFO - 127.0.0.1 - - [28/Nov/2025 09:52:39] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/session_2_20251128_091800.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:52:40,186 - INFO - 127.0.0.1 - - [28/Nov/2025 09:52:40] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/session_2_20251128_091800.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:52:40,444 - INFO - 127.0.0.1 - - [28/Nov/2025 09:52:40] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/session_2_20251128_091800.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:52:40,509 - INFO - 127.0.0.1 - - [28/Nov/2025 09:52:40] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/session_2_20251128_091800.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:52:40,751 - INFO - 127.0.0.1 - - [28/Nov/2025 09:52:40] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/session_2_20251128_091800.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:52:40,827 - INFO - 127.0.0.1 - - [28/Nov/2025 09:52:40] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/session_2_20251128_091800.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:52:41,075 - INFO - 127.0.0.1 - - [28/Nov/2025 09:52:41] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/session_2_20251128_091800.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:52:41,142 - INFO - 127.0.0.1 - - [28/Nov/2025 09:52:41] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/session_2_20251128_091800.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:52:42,672 - INFO - 127.0.0.1 - - [28/Nov/2025 09:52:42] "GET /api/get-violation-videos?sessionId=2&studentId=104182562 HTTP/1.1" 200 -
+2025-11-28 09:52:42,697 - INFO - 127.0.0.1 - - [28/Nov/2025 09:52:42] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:52:43,009 - INFO - 127.0.0.1 - - [28/Nov/2025 09:52:43] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:52:43,009 - INFO - 127.0.0.1 - - [28/Nov/2025 09:52:43] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 09:52:43,324 - INFO - 127.0.0.1 - - [28/Nov/2025 09:52:43] "[35m[1mGET /outputs/session_2_20251128_091800_20251128_091812/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 10:26:41,801 - INFO - 127.0.0.1 - - [28/Nov/2025 10:26:41] "OPTIONS /api/process-video HTTP/1.1" 200 -
+2025-11-28 10:31:32,084 - INFO - 127.0.0.1 - - [28/Nov/2025 10:31:32] "GET /api/get-violation-videos?sessionId=2&studentId=104182562 HTTP/1.1" 200 -
+2025-11-28 10:34:03,903 - INFO - ================================================================================
+2025-11-28 10:34:03,903 - INFO - 📤 STARTING DATABASE UPDATE
+2025-11-28 10:34:03,903 - INFO - ================================================================================
+2025-11-28 10:34:03,918 - INFO - 📊 Read 4 students from CSV (skipped unknown tracks)
+2025-11-28 10:34:03,918 - INFO - ✅ Enriched 4 students with JSON ALS data
+2025-11-28 10:34:03,948 - INFO - 📥 Retrieved 5 students from database
+2025-11-28 10:34:03,948 - INFO - ✅ Updating 104221795 → StudentID=5, ALS=66.67, ActivePoint=67
+2025-11-28 10:34:03,978 - INFO - 📄 Generating evidence PDF for 104221795...
+2025-11-28 10:34:03,988 - INFO - ✅ Generated PDF: /reports/104221795.pdf
+2025-11-28 10:34:04,008 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 10:34:04,008 - INFO - ✅ Evidence PDF generated: /reports/104221795.pdf
+2025-11-28 10:34:04,008 - INFO - ✅ Updating 104181857 → StudentID=3, ALS=76.81, ActivePoint=77
+2025-11-28 10:34:04,013 - INFO - 📄 Generating evidence PDF for 104181857...
+2025-11-28 10:34:04,018 - INFO - ✅ Generated PDF: /reports/104181857.pdf
+2025-11-28 10:34:04,040 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 10:34:04,040 - INFO - ✅ Evidence PDF generated: /reports/104181857.pdf
+2025-11-28 10:34:04,040 - INFO - ✅ Updating 104182562 → StudentID=4, ALS=59.57, ActivePoint=60
+2025-11-28 10:34:04,058 - INFO - 📄 Generating evidence PDF for 104182562...
+2025-11-28 10:34:04,064 - INFO - ✅ Generated PDF: /reports/104182562.pdf
+2025-11-28 10:34:04,103 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 10:34:04,103 - INFO - ✅ Evidence PDF generated: /reports/104182562.pdf
+2025-11-28 10:34:04,103 - INFO - ✅ Updating 104221559 → StudentID=1, ALS=69.20, ActivePoint=69
+2025-11-28 10:34:04,124 - INFO - 📄 Generating evidence PDF for 104221559...
+2025-11-28 10:34:04,124 - INFO - ✅ Generated PDF: /reports/104221559.pdf
+2025-11-28 10:34:04,154 - ERROR - ❌ Failed to save PDF URL to database: Unknown error
+2025-11-28 10:34:04,154 - INFO - ✅ Evidence PDF generated: /reports/104221559.pdf
+2025-11-28 10:34:04,154 - INFO - ================================================================================
+2025-11-28 10:34:04,154 - INFO - ✅ DATABASE UPDATE COMPLETED
+2025-11-28 10:34:04,154 - INFO - 📊 Summary: 4/4 students updated
+2025-11-28 10:34:04,154 - INFO - 📄 Evidence: 4/4 PDFs generated
+2025-11-28 10:34:04,154 - INFO - ================================================================================
+2025-11-28 10:34:04,167 - INFO - 127.0.0.1 - - [28/Nov/2025 10:34:04] "POST /api/process-video HTTP/1.1" 200 -
+2025-11-28 10:34:52,275 - INFO - 127.0.0.1 - - [28/Nov/2025 10:34:52] "GET /api/get-processed-video?sessionId=2 HTTP/1.1" 200 -
+2025-11-28 10:34:52,609 - INFO - 127.0.0.1 - - [28/Nov/2025 10:34:52] "[35m[1mGET /outputs/session_2_20251128_102642_20251128_102645/session_2_20251128_102642.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 10:34:52,855 - INFO - 127.0.0.1 - - [28/Nov/2025 10:34:52] "[35m[1mGET /outputs/session_2_20251128_102642_20251128_102645/session_2_20251128_102642.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 10:34:52,922 - INFO - 127.0.0.1 - - [28/Nov/2025 10:34:52] "[35m[1mGET /outputs/session_2_20251128_102642_20251128_102645/session_2_20251128_102642.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 10:34:54,711 - INFO - 127.0.0.1 - - [28/Nov/2025 10:34:54] "[35m[1mGET /outputs/session_2_20251128_102642_20251128_102645/session_2_20251128_102642.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 10:34:55,024 - INFO - 127.0.0.1 - - [28/Nov/2025 10:34:55] "[35m[1mGET /outputs/session_2_20251128_102642_20251128_102645/session_2_20251128_102642.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 10:34:57,308 - INFO - 127.0.0.1 - - [28/Nov/2025 10:34:57] "[35m[1mGET /outputs/session_2_20251128_102642_20251128_102645/session_2_20251128_102642.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 10:34:57,620 - INFO - 127.0.0.1 - - [28/Nov/2025 10:34:57] "[35m[1mGET /outputs/session_2_20251128_102642_20251128_102645/session_2_20251128_102642.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 10:34:57,925 - INFO - 127.0.0.1 - - [28/Nov/2025 10:34:57] "[35m[1mGET /outputs/session_2_20251128_102642_20251128_102645/session_2_20251128_102642.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 10:34:58,182 - INFO - 127.0.0.1 - - [28/Nov/2025 10:34:58] "[35m[1mGET /outputs/session_2_20251128_102642_20251128_102645/session_2_20251128_102642.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 10:35:09,236 - INFO - 127.0.0.1 - - [28/Nov/2025 10:35:09] "GET /api/get-violation-videos?sessionId=2&studentId=104181857 HTTP/1.1" 200 -
+2025-11-28 10:35:12,043 - INFO - 127.0.0.1 - - [28/Nov/2025 10:35:12] "GET /api/get-violation-videos?sessionId=2&studentId=104182562 HTTP/1.1" 200 -
+2025-11-28 10:35:12,071 - INFO - 127.0.0.1 - - [28/Nov/2025 10:35:12] "[35m[1mGET /outputs/session_2_20251128_102642_20251128_102645/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 10:35:12,377 - INFO - 127.0.0.1 - - [28/Nov/2025 10:35:12] "[35m[1mGET /outputs/session_2_20251128_102642_20251128_102645/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 10:35:12,695 - INFO - 127.0.0.1 - - [28/Nov/2025 10:35:12] "[35m[1mGET /outputs/session_2_20251128_102642_20251128_102645/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 10:35:13,003 - INFO - 127.0.0.1 - - [28/Nov/2025 10:35:13] "[35m[1mGET /outputs/session_2_20251128_102642_20251128_102645/violations/104182562_bow_head.mp4 HTTP/1.1[0m" 206 -
+2025-11-28 10:35:29,954 - INFO - 127.0.0.1 - - [28/Nov/2025 10:35:29] "GET /api/get-violation-videos?sessionId=2&studentId=104221559 HTTP/1.1" 200 -
+2025-11-28 10:35:32,402 - INFO - 127.0.0.1 - - [28/Nov/2025 10:35:32] "GET /api/get-violation-videos?sessionId=2&studentId=104221795 HTTP/1.1" 200 -

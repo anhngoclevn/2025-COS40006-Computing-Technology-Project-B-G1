@@ -1,0 +1,335 @@
+/* ===============================================
+   1. CONTAINER & LAYOUT
+   =============================================== */
+.students-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.main-layout {
+    display: flex;
+    flex: 1;
+}
+
+/* ===============================================
+   2. MAIN CONTENT AREA
+   =============================================== */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    margin-top: 70px;
+    margin-left: 250px;
+    margin-bottom: 50px;
+    background-color: #f5f5f5;
+    padding: 30px;
+}
+
+.content-area {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+}
+
+.page-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* ===============================================
+   3. SEARCH & CONTROLS SECTION
+   =============================================== */
+.controls-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.search-container {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 16px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    transition: border-color 0.2s;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 16px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.export-button,
+.refresh-button,
+.test-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.export-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.export-button:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+.export-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.refresh-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.refresh-button:hover {
+    background-color: #0056b3;
+}
+
+.test-button {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.test-button:hover {
+    background-color: #e0a800;
+}
+
+/* ===============================================
+   4. STUDENTS TABLE
+   =============================================== */
+.students-table-container {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.students-table th {
+    background-color: #f8f9fa;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.students-table td {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.students-table tr:last-child td {
+    border-bottom: none;
+}
+
+.students-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.students-table td:first-child {
+    font-weight: 500;
+    color: #007bff;
+}
+
+/* ===============================================
+   5. UTILITY CLASSES
+   =============================================== */
+.loading {
+    text-align: center;
+    padding: 60px;
+    color: #666;
+    font-style: italic;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+    border-left: 4px solid #dc3545;
+}
+
+.no-data {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-style: italic;
+}
+
+.results-info {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* ===============================================
+   6. RESPONSIVE DESIGN
+   =============================================== */
+@media (max-width: 768px) {
+    .students-container {
+        flex-direction: column;
+    }
+
+    .main-layout {
+        flex-direction: column;
+    }
+
+    .main-content {
+        margin-left: 0;
+        margin-top: 60px;
+        padding: 15px;
+    }
+
+    .content-area {
+        padding: 15px;
+    }
+
+    .controls-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-container {
+        max-width: none;
+    }
+
+    .action-buttons {
+        justify-content: stretch;
+    }
+
+    .export-button,
+    .refresh-button {
+        flex: 1;
+    }
+
+    .students-table {
+        font-size: 12px;
+    }
+
+    .students-table th,
+    .students-table td {
+        padding: 10px 8px;
+    }
+
+    .page-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .students-table th,
+    .students-table td {
+        padding: 8px 6px;
+        font-size: 11px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .search-input {
+        padding: 10px 14px 10px 35px;
+    }
+}
+
+/* ===============================================
+   7. TABLE RESPONSIVENESS
+   =============================================== */
+@media (max-width: 1024px) {
+    .students-table-container {
+        overflow-x: auto;
+    }
+
+    .students-table {
+        min-width: 800px;
+    }
+}
+
+/* ===============================================
+   8. LOADING ANIMATION
+   =============================================== */
+.loading::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

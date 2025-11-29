@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #111;
+}
+
+/* LEFT SECTION */
+.left {
+  flex: 0.5;
+  background-color: #ffffff;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+.formBox {
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  width: 250px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.partner {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 35px;
+  letter-spacing: 0.3px;
+}
+
+.signin {
+  font-size: 1.25rem;
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.input {
+  padding: 11px 13px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  transition: border 0.2s;
+  background-color: #fff;
+  cursor: text;
+}
+
+.form select {
+  cursor: pointer;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #d71920;
+}
+
+.recover {
+  text-align: right;
+  margin-top: -5px;
+}
+
+.recover a {
+  font-size: 0.85rem;
+  color: #0b57d0;
+  text-decoration: none;
+}
+
+.recover a:hover {
+  text-decoration: underline;
+}
+
+.signinBtn {
+  margin-top: 5px;
+  background-color: #d71920;
+  color: #fff;
+  font-size: 0.95rem;
+  padding: 11px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.signinBtn:hover {
+  background-color: #b9161d;
+}
+
+.footer {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 45px;
+  text-align: center;
+}
+
+/* RIGHT SECTION */
+.right {
+  flex: 1.2;
+  overflow: hidden;
+}
+
+.right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.errorBox {
+  background-color: #ffeaea;
+  color: #d71920;
+  border: 1px solid #d71920;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  text-align: center;
+}

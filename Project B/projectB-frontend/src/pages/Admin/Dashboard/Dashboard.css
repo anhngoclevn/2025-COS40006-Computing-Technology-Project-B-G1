@@ -1,0 +1,364 @@
+/* ===============================================
+   1. CONTAINER & LAYOUT
+   =============================================== */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.main-layout {
+    display: flex;
+    flex: 1;
+}
+
+/* ===============================================
+   2. MAIN CONTENT AREA
+   =============================================== */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    margin-top: 70px;
+    margin-left: 250px;
+    margin-bottom: 50px;
+    background-color: #f5f5f5;
+    padding: 30px;
+}
+
+.content-area {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+}
+
+.page-title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.page-subtitle {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+/* ===============================================
+   3. STATS CARDS
+   =============================================== */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.stat-title {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+.stat-icon {
+    font-size: 24px;
+    opacity: 0.7;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.stat-change {
+    font-size: 12px;
+    color: #28a745;
+}
+
+/* ===============================================
+   4. CHARTS SECTION
+   =============================================== */
+.charts-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.chart-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.attendance-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.attendance-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.attendance-label {
+    min-width: 80px;
+    font-size: 14px;
+    color: #666;
+    text-transform: capitalize;
+}
+
+.attendance-progress {
+    flex: 1;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.attendance-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.attendance-fill.present {
+    background-color: #28a745;
+}
+
+.attendance-fill.absent {
+    background-color: #dc3545;
+}
+
+.attendance-fill.late {
+    background-color: #ffc107;
+}
+
+.attendance-count {
+    min-width: 40px;
+    text-align: right;
+    font-weight: 600;
+    color: #333;
+}
+
+/* ===============================================
+   5. RECENT ACTIVITY TABLE
+   =============================================== */
+.recent-activity {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.activity-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.activity-table th {
+    background-color: #f8f9fa;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.activity-table td {
+    padding: 12px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+}
+
+.activity-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.status-badge.present {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-badge.absent {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.status-badge.late {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* ===============================================
+   6. COURSE DISTRIBUTION
+   =============================================== */
+.course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.course-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.course-item:last-child {
+    border-bottom: none;
+}
+
+.course-name {
+    font-weight: 500;
+    color: #333;
+}
+
+.course-count {
+    background-color: #007bff;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ===============================================
+   7. LOADING & ERROR STATES
+   =============================================== */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: #666;
+    font-size: 16px;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+    border-left: 4px solid #dc3545;
+}
+
+/* ===============================================
+   8. RESPONSIVE DESIGN
+   =============================================== */
+@media (max-width: 1024px) {
+    .charts-section {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .main-layout {
+        flex-direction: column;
+    }
+
+    .main-content {
+        margin-left: 0;
+        margin-top: 60px;
+        padding: 15px;
+    }
+
+    .content-area {
+        padding: 15px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+    .activity-table {
+        font-size: 12px;
+    }
+
+    .activity-table th,
+    .activity-table td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stat-number {
+        font-size: 24px;
+    }
+
+    .chart-title {
+        font-size: 16px;
+    }
+
+    .activity-title {
+        font-size: 16px;
+    }
+}
